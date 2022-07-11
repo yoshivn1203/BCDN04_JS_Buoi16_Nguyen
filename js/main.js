@@ -10,16 +10,18 @@ timMin = () => {
 
 tinhTong = () => {
   let x = document.getElementById('inputX').value,
-    n = document.getElementById('inputN').value;
-  for (let sum = 0, i = 1; i <= n; i++) {
+    n = document.getElementById('inputN').value,
+    sum = 0;
+  for (let i = 1; i <= n; i++) {
     sum += Math.pow(x, i);
   }
   document.getElementById('ketQua2').innerHTML = sum;
 };
 
 tinhGiaiThua = () => {
-  let n = document.getElementById('inputN2').value;
-  for (let result = 1, i = 1; i <= n; i++) {
+  let n = document.getElementById('inputN2').value,
+    result = 1;
+  for (let i = 1; i <= n; i++) {
     result *= i;
   }
   document.getElementById('ketQua3').innerHTML = result;
